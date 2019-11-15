@@ -1,0 +1,18 @@
+#!/usr/bin/env php
+<?php
+
+if (file_exists('../vendor/autoload.php')) {
+    require '../vendor/autoload.php';
+} else {
+    require '../../../../autoload.php';
+}
+
+use Encore\Dev\Application;
+
+define('BASE_PATH', realpath(__DIR__.'/../'));
+
+$app = new Application();
+
+$app->bootstrap();
+
+$app->run();

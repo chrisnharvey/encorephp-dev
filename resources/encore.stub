@@ -1,0 +1,7 @@
+<?php
+
+Phar::mapPhar('encore.phar');
+
+require 'phar://encore.phar/{ENTRYPOINT}';
+
+__HALT_COMPILER();

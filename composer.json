@@ -1,0 +1,20 @@
+{
+    "name": "chrisnharvey/encorephp-dev",
+    "description": "EncorePHP dev tools",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Chris Harvey",
+            "email": "chris@chrisnharvey.com"
+        }
+    ],
+    "bin": ["bin/encore"],
+    "require": {
+        "chrisnharvey/encorephp": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "Encore\\Dev\\": "src/"
+        }
+    }
+}
